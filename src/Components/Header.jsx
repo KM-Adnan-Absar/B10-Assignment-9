@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import img from '../assets/images/logo.png';
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/home" className="hover:bg-gray-500 font-bold px-4 py-2 block">
+        <NavLink to="/" className="hover:bg-gray-500 font-bold px-4 py-2 block">
           Home
         </NavLink>
       </li>
@@ -89,9 +89,13 @@ const Header = () => {
       </div>
 
       {/* Login button */}
-      <div className="navbar-end">
-        <a className="btn">Login</a>
+      <div className="navbar-end btn w-20  p-2 rounded-md">
+     <Link className='mr-2' to='/login'> Login</Link>
+     
       </div>
+ <div className='btn w-20  p-2 rounded-md ml-2'>
+ <Link className='mr1' to = '/register'>Register</Link>
+ </div>
     </div>
   );
 };

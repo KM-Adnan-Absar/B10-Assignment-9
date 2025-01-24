@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Register from './Components/Register.jsx'
 
 
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     path:'/login',
   element: <Login></Login>,
   },
+  {
+    path:'/register',
+    element: <Register></Register>
+  }
   
     ]
 

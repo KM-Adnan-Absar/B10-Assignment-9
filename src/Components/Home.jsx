@@ -3,6 +3,7 @@ import About from "./About";
 import Work from "./work";
 import DonationCampaign from "./DonationCampaign";
 import Login from "./Login";
+
 const Home = () => {
     return (
 
@@ -22,7 +23,7 @@ const Home = () => {
 <DonationCampaign></DonationCampaign>
 </div>
 
-<Login></Login>
+
 
 </div>
 
