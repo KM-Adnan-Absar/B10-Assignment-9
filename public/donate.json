@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Save the Children",
+    "image": "/public/ph_54439_212402.jpg",
+    "description": "A campaign to provide food, shelter, and education for underprivileged children.",
+    "status": "Active",
+    "contactInfo": "contact@savechildren.org",
+    "division": "Chattogram"
+  },
+  {
+    "id": 2,
+    "title": "Food for Homeless",
+    "image": "/public/O6MVLLIEO5CPPPLO6JTKCPBC3Y.avif",
+    "description": "Organizing food drives to support the homeless in urban areas.",
+    "status": "Completed",
+    "contactInfo": "+880987654321",
+    "division": "Dhaka"
+  },
+  {
+    "id": 3,
+    "title": "Winter Clothes Drive",
+    "image": "/public/istockphoto-856564654-612x612.jpg",
+    "description": "Collecting warm clothes for underprivileged communities winter.",
+    "status": "Ongoing",
+    "contactInfo": "+8801122334455",
+    "division": "Rajshahi"
+  },
+  {
+    "id": 4,
+    "title": "Education for All",
+    "image": "/public/10-2015-06-SCHOOLBAGSBASECO_CHURCH-037.webp",
+    "description": "Helping children from low-income families with school supplies and fees.",
+    "status": "Upcoming",
+    "contactInfo": "+8809988776655",
+    "division": "Khulna"
+  },
+  {
+    "id": 5,
+    "title": "Healthcare Access Initiative",
+    "image": "/public/healthcare-in-rural-areas-800x500.jpg",
+    "description": "Improving access to basic healthcare in rural areas.",
+    "status": "Ongoing",
+    "contactInfo": "+8803344556677",
+    "division": "Sylhet"
+  },
+   {
+    "id": 6,
+    "title": "Tree Plantation Drive",
+    "image": "/public/wr7_0.jpg",
+    "description": "A campaign to plant trees and promote environmental awareness across.",
+    "status": "Ongoing",
+    "contactInfo": "greenearth@chattogram.org",
+    "division": "Chattogram"
+  }
+ 
+]
