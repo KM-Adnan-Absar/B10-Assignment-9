@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Save the Children",
-    "image": "/src/assets/Images/ph_54439_212402.jpg",
+    "image": "https://i.ibb.co.com/6HgCgDJ/ph-54439-212402.jpg",
     "description": "A campaign to provide food, shelter, and education for underprivileged children.",
     "status": "Active",
     "contactInfo": "contact@savechildren.org",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Food for Homeless",
-    "image": "/src/assets/Images/O6MVLLIEO5CPPPLO6JTKCPBC3Y.avif",
+    "image": "https://i.ibb.co.com/23C3VY1/O6-MVLLIEO5-CPPPLO6-JTKCPBC3-Y.jpg",
     "description": "Organizing food drives to support the homeless in urban areas.",
     "status": "Completed",
     "contactInfo": "+880987654321",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Winter Clothes Drive",
-    "image": "/src/assets/Images//istockphoto-856564654-612x612.jpg",
+    "image": "https://i.ibb.co.com/Rpw1gNt/istockphoto-856564654-612x612.jpg",
     "description": "Collecting warm clothes for underprivileged communities winter.",
     "status": "Ongoing",
     "contactInfo": "+8801122334455",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Education for All",
-    "image": "/src/assets/Images/10-2015-06-SCHOOLBAGSBASECO_CHURCH-037.webp",
+    "image": "https://i.ibb.co.com/HNt8Jc8/10-2015-06-SCHOOLBAGSBASECO-CHURCH-037.webp",
     "description": "Helping children from low-income families with school supplies and fees.",
     "status": "Upcoming",
     "contactInfo": "+8809988776655",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Healthcare Access Initiative",
-    "image": "/src/assets/Images/healthcare-in-rural-areas-800x500.jpg",
+    "image": "https://i.ibb.co.com/48KyxSS/healthcare-in-rural-areas-800x500.jpg",
     "description": "Improving access to basic healthcare in rural areas.",
     "status": "Ongoing",
     "contactInfo": "+8803344556677",
@@ -47,7 +47,7 @@
    {
     "id": 6,
     "title": "Tree Plantation Drive",
-    "image": "/src/assets/Images/wr7_0.jpg",
+    "image": "https://i.ibb.co.com/QfJbXcN/wr7-0.jpg",
     "description": "A campaign to plant trees and promote environmental awareness across.",
     "status": "Ongoing",
     "contactInfo": "greenearth@chattogram.org",
