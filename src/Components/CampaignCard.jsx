@@ -1,8 +1,11 @@
+
 import { NavLink } from "react-router-dom";
 
 
+
 const CampaignCard= ({campaign}) => {
-    
+ 
+
     return (
 
         <div className="border rounded-lg shadow-lg p-4">

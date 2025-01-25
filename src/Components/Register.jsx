@@ -1,10 +1,23 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {AuthContext} from './AuthProviders'
 
 const Register = () => {
 
-const {createUser} = useContext(AuthContext)
+const {createUser , signInWithGoogle} = useContext(AuthContext)
+const navigate = useNavigate();
+
+const handleSignInGoogle = () => {
+  signInWithGoogle()
+  .then(result => {
+    console.log(result.user)
+    navigate('/')
+  })
+  
+  .catch(error => console.log('ERROR',error.message))
+
+}
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -17,6 +30,8 @@ const {createUser} = useContext(AuthContext)
     createUser (email , password)
     .then(result => {
         console.log(result.user)
+        e.target.reset()
+        navigate('/')
     })
     .catch(error => {
         console.log('ERROR',error.message);
@@ -47,6 +62,17 @@ const {createUser} = useContext(AuthContext)
             </label>
             <input type="email" name = 'email' placeholder="email" className="input input-bordered" required />
           </div>
+          {/* photo URL  */}
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Photo URL</span>
+            </label>
+            <input type="text" name = 'photo' placeholder="Photo URL" className="input input-bordered" required />
+          </div>
+
+
+
+          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Password</span>
@@ -59,7 +85,11 @@ const {createUser} = useContext(AuthContext)
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>
           </div>
-          <p className="text-center"><small >Already have an acoount ? <Link to ='/login'>Login</Link></small></p>
+          <p className="text-center"><small >Already have an acoount ? 
+            <Link to ='/login'>Login</Link></small></p>
+            <p className="text-center">
+              <button onClick={handleSignInGoogle} className="btn btn-ghost">Google</button>
+            </p>
         </form>
     </div>
   </div>

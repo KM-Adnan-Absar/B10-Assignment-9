@@ -1,9 +1,16 @@
+import { useContext } from "react";
+import { AuthContext } from "./AuthProviders";
 
 const Details = () => {
+const {user} =  useContext(AuthContext)
 
     return (
         <div>
-           <h2>I have many Details</h2>
+         {
+            user && <>
+              <h2>I have many Details</h2>
+            </>
+         }
         </div>
     );
 };

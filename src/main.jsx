@@ -15,6 +15,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import PrivateRoute from './Components/PrivateRoute.jsx'
 
 
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/details',
-        element: <Details></Details>,
+        element:<PrivateRoute><Details></Details></PrivateRoute>,
   },
 
   {

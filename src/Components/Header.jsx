@@ -103,13 +103,8 @@ const handleSignOut = () => {
       </div>
 
       {/* Login button */}
-      <div className="navbar-end btn w-20  p-2 rounded-md">
-     <Link className='mr-2' to='/login'> Login</Link>
-     
-      </div>
- <div className='btn w-20  p-2 rounded-md ml-2'>
- <Link to='/register'> Register </Link>
- </div>
+   
+ 
  <div className="navbar-end ">
     {
       user ? 
@@ -118,10 +113,16 @@ const handleSignOut = () => {
       <a onClick={handleSignOut} >Sign out</a>
       </>
       :
-      <Link to = 'login'>Login</Link> 
+      <div className="navbar-end btn w-20  p-2 rounded-md">
+      <Link className='mr-2' to='/login'> Login</Link>
+      
+       </div>
     }
      
       </div>
+      <div className='btn w-20  p-2 rounded-md ml-2'>
+ <Link to='/register'> Register </Link>
+ </div>
     </div>
   );
 };
