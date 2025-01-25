@@ -1,4 +1,4 @@
-import imag1 from '../assets/Images/pixel4.webp'
+import imag1 from '../assets/Images/pixel4.webp';
 import imag2  from '../assets/Images/pixel3.webp'
 import imag3  from '../assets/Images/DALL·E 2024-11-25 07.51.03 - A beautiful winter donation campaign image featuring warm clothing such as scarves, mittens, hats, and coats being handed out in a snowy community set.webp'
 
