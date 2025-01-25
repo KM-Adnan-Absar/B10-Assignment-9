@@ -109,7 +109,7 @@ const handleSignOut = () => {
     {
       user ? 
       <>
-      <span>{user.email}</span>
+      <span>{user.photo}</span>
       <a onClick={handleSignOut} >Sign out</a>
       </>
       :
