@@ -1,4 +1,4 @@
-
+import img from '../assets/Images/Volunteer-people-donation-2.jpeg'
 
 const Work = () => {
     return (
@@ -51,7 +51,7 @@ const Work = () => {
            
               <div>
               <img
-                src="/public/Volunteer-people-donation-2.jpeg"
+                src={img}
                 alt="Volunteers Working"
                 className="rounded-lg shadow-lg w-full h-auto object-cover ml-8"
               />

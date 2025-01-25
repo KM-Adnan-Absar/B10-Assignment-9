@@ -5,11 +5,12 @@ import { NavLink } from "react-router-dom";
 
 const CampaignCard= ({campaign}) => {
  
+  
 
     return (
 
         <div className="border rounded-lg shadow-lg p-4">
-        <img src={campaign.image} alt={campaign.title} className="w-full h-48 object-cover rounded" />
+        <img src={campaign.image} alt={campaign.image} className="w-full h-48 object-cover rounded" />
        <div className="space-y-2">
        <h2 className="text-lg font-bold mt-4">{campaign.title}</h2>
         <p className=" my-2">{campaign.description}</p>
