@@ -24,7 +24,8 @@ const handleSignInGoogle = () => {
         const name =  e.target.name.value;
        const email =  e.target.email.value;
        const password = e.target.password.value
-         console.log(name,email,password)
+       const photo = e.target.photo.value
+         console.log(name,email,password,photo)
 
         //  CreateUser
     createUser (email , password)
