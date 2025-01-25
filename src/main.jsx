@@ -7,12 +7,15 @@ import Root from './Components/Root.jsx';
 import Home from './Components/Home.jsx'
 import Details from './Components/Details.jsx'
 import Login from './Components/Login.jsx'
+import Register from './Components/Register.jsx'
+import AuthProviders from './Components/AuthProviders.jsx'
+
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Register from './Components/Register.jsx'
+
 
 
 
@@ -50,6 +53,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+<AuthProviders> <RouterProvider router={router} /></AuthProviders> 
  </StrictMode>,
 )

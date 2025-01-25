@@ -1,12 +1,26 @@
 import { Link, NavLink } from 'react-router-dom';
 import img from '../assets/images/logo.png';
+import { useContext } from 'react';
+import { AuthContext } from './AuthProviders';
 
 const Header = () => {
+
+  const {user , signOutUser} = useContext(AuthContext)
+
   const handleDropdownToggle = () => {
     const dropdownMenu = document.getElementById('dropdown-menu');
     dropdownMenu.classList.toggle('hidden');
   };
-
+const handleSignOut = () => {
+  signOutUser()
+  .then(() => {
+    console.log('User SignOut Successfully');
+    
+  })
+  
+.catch(error => 
+    console.log('ERROR',error.message))
+}
   const links = (
     <>
       <li>
@@ -94,8 +108,20 @@ const Header = () => {
      
       </div>
  <div className='btn w-20  p-2 rounded-md ml-2'>
- <Link className='mr1' to = '/register'>Register</Link>
+ <Link to='/register'> Register </Link>
  </div>
+ <div className="navbar-end ">
+    {
+      user ? 
+      <>
+      <span>{user.email}</span>
+      <a onClick={handleSignOut} >Sign out</a>
+      </>
+      :
+      <Link to = 'login'>Login</Link> 
+    }
+     
+      </div>
     </div>
   );
 };

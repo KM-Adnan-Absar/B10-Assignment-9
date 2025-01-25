@@ -1,16 +1,30 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "./AuthProviders";
 
 
 const Login = () => {
 
+const {signInUser} = useContext(AuthContext)
+
 const handleSubmit = (e) => {
-    e.preventDefault()
-   const email =  e.target.email.value;
-   const password = e.target.password.value
+     e.preventDefault();
+     const email =  e.target.email.value;
+     const password = e.target.password.value
      console.log(email,password)
 
-}
-    return (
+     signInUser(email,password)
+     .then(result => {
+      console.log(result.user);
+      
+     })
+     
+
+
+};
+
+
+return (
         <div className="card bg-base-100 w-full mx-auto mt-24 max-w-sm shrink-0 shadow-2xl">
            <div >
       <h1 className="text-2xl font-bold text-center">Login</h1>
